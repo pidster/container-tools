@@ -5,4 +5,4 @@ RUN apk update
 RUN apk add lsof
 RUN apk add nmap
 
-ENTRYPOINT [ 'lsof' ]
+ENTRYPOINT [ 'sh' ]
