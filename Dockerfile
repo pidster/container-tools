@@ -1,6 +1,6 @@
 FROM alpine
 MAINTAINER "Pid <docker+builds@pidster.com>"
 
-RUN apk add --update bash lsof nmap && rm -rf /var/cache/apk/*
+RUN apk add --update bash lsof nmap
 
-ENTRYPOINT [ 'bash' ]
+ENTRYPOINT [ '/bin/bash' ]
