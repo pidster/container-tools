@@ -1,5 +1,4 @@
 FROM alpine
-MAINTAINER "Pid <docker+builds@pidster.com>"
 
 VOLUME [ '/tmp' ]
 
@@ -10,4 +9,5 @@ RUN apk update \
     nmap \
     curl \
     iptables \
+    strace \
  && rm -rf /var/cache/apk/*
